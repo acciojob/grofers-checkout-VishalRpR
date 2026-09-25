@@ -7,14 +7,14 @@ const getSum = () => {
 	let prices= document.querySelectorAll(".price")
 	let sum=0;
     prices.forEach((price)=>{
-       sum+=Number(price)
+       sum+=Number(price.value)
 	})
 
 	let pricerow=document.createElement("tr")
 	let pricetd=document.createElement("td")
 	document.table.appendChild(pricetd)
 	pricetd.innerText=sum
-	document.getElementsByTagName[0].appendChild(row)
+	document.getElementsByTagName[0].appendChild(pricerow)
 };
 
 getSumBtn.addEventListener("click", getSum);
