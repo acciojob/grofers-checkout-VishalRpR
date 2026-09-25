@@ -6,13 +6,15 @@ const getSum = () => {
 //Add your code here
 	let prices= document.querySelectorAll(".price")
 	let sum=0;
-    prices.foreach((price)=>{
+    prices.forEach((price)=>{
        sum+=price
 	})
 
-	let priceDiv=document.createElement("div")
-	priceDiv.innerText=sum
-	document.body.apendChild(priceDiv)
+	let pricerow=document.createElement("tr")
+	let pricetd=document.createElement("td")
+	document.table.apendChild(pricetd)
+	pricetd.innerText=sum
+	document.table.apendChild(row)
 };
 
 getSumBtn.addEventListener("click", getSum);
