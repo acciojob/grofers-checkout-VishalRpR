@@ -7,12 +7,12 @@ const getSum = () => {
 	let prices= document.querySelectorAll(".price")
 	let sum=0;
     prices.forEach((price)=>{
-       sum+=Number(price.value)
+       sum+=Number(price.textContent)
 	})
 
 	let pricerow=document.createElement("tr")
 	let pricetd=document.createElement("td")
-	document.table.appendChild(pricetd)
+	pricerow.appendChild(pricetd)
 	pricetd.innerText=sum
 	document.getElementsByTagName[0].appendChild(pricerow)
 };
