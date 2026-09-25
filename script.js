@@ -14,7 +14,7 @@ const getSum = () => {
 	let pricetd=document.createElement("td")
 	pricerow.appendChild(pricetd)
 	pricetd.innerText=sum
-	document.getElementsByTagName[0].appendChild(pricerow)
+	document.getElementsByTagName("table")[0].appendChild(pricerow)
 };
 
 getSumBtn.addEventListener("click", getSum);
